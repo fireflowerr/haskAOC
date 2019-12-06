@@ -3,12 +3,9 @@ module Main where
 import Data.Array.IArray (elems)
 import Data.Array.ST
 import Data.Array.Unboxed
-import Data.Foldable (toList)
 import Data.List (findIndex, (!!))
 import Data.List.Split (splitOn)
 import Data.STRef (newSTRef, readSTRef, writeSTRef)
-import Control.Monad (join)
-import Control.Monad.ST (runST)
 import Control.Monad.Loops (whileM_)
 import qualified GHC.IO.Handle.FD as FD (openFile)
 import System.Environment (getArgs)
